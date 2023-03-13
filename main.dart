@@ -41,16 +41,16 @@ class MyAppState extends State<MyApp> {
                 children: [
                   Container(
                     decoration: BoxDecoration(border: Border.all(color: Colors.red)),
-                    height: 180,
+                    height: 150,
                     width: double.infinity,
                     child: Image.network("https://plus.unsplash.com/premium_photo-1666262369867-6e521a979afb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80", fit: BoxFit.fitWidth,),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Activity", style: TextStyle(color: Colors.white, fontSize: 80, fontWeight: FontWeight.w600),)
+                        Text("Activity", style: TextStyle(color: Colors.white, fontSize: 50, fontWeight: FontWeight.w600),)
                       ],
                     ),
                   )
@@ -61,7 +61,7 @@ class MyAppState extends State<MyApp> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Icon(Icons.check_circle, color: Colors.black, size: 100,),
+                    Icon(Icons.notification_add, color: Colors.grey.shade500, size: 100,),
                     Padding(
                       padding: const EdgeInsets.all(7.0),
                       child: Text("No New Notifications", style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.w700),),
@@ -78,17 +78,33 @@ class MyAppState extends State<MyApp> {
                       width: 1
                     )
                   ),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
-                        child: Text("Campus Alert", style: TextStyle(color: Colors.red, fontSize: 10, fontWeight: FontWeight.w600),),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10.0),
-                        child: Text("Notifikasi ke-0", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w400)),
-                      ),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(left:8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right:5.0),
+                                child: Icon(Icons.percent, color: Colors.red,size: 13.0,),
+                              ),
+                              Text("CAMPUS ALERT", style: TextStyle(color: Colors.red, fontSize: 13, fontWeight: FontWeight.w600),),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 5.0),
+                          child: Text("Power Restored to Stanford Campus", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold)),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10.0),
+                          child: Text("49 Days Ago", style: TextStyle(color: Colors.grey.shade400, fontSize: 12, fontWeight: FontWeight.bold)),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -100,17 +116,33 @@ class MyAppState extends State<MyApp> {
                       width: 1
                     )
                   ),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
-                        child: Text("Campus Alert", style: TextStyle(color: Colors.red, fontSize: 10, fontWeight: FontWeight.w600),),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10.0),
-                        child: Text("Notifikasi ke-1", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w400)),
-                      ),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(left:8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right:5.0),
+                                child: Icon(Icons.percent, color: Colors.red,size: 13.0,),
+                              ),
+                              Text("CAMPUS ALERT", style: TextStyle(color: Colors.red, fontSize: 13, fontWeight: FontWeight.w600),),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 5.0),
+                          child: Text("University Staff Working to Resolve Partial Power Outage", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold)),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10.0),
+                          child: Text("49 Days Ago", style: TextStyle(color: Colors.grey.shade400, fontSize: 12, fontWeight: FontWeight.bold)),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -122,17 +154,33 @@ class MyAppState extends State<MyApp> {
                       width: 1
                     )
                   ),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
-                        child: Text("Campus Alert", style: TextStyle(color: Colors.red, fontSize: 10, fontWeight: FontWeight.w600),),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10.0),
-                        child: Text("Notifikasi ke-2", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w400)),
-                      ),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(left:8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right:5.0),
+                                child: Icon(Icons.percent, color: Colors.red,size: 13.0,),
+                              ),
+                              Text("CAMPUS ALERT", style: TextStyle(color: Colors.red, fontSize: 13, fontWeight: FontWeight.w600),),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 5.0),
+                          child: Text("Notifikasi ke-0", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold)),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10.0),
+                          child: Text("49 Days Ago", style: TextStyle(color: Colors.grey.shade400, fontSize: 12, fontWeight: FontWeight.bold)),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -144,17 +192,33 @@ class MyAppState extends State<MyApp> {
                       width: 1
                     )
                   ),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
-                        child: Text("Campus Alert", style: TextStyle(color: Colors.red, fontSize: 10, fontWeight: FontWeight.w600),),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10.0),
-                        child: Text("Notifikasi ke-3", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w400)),
-                      ),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(left:8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right:5.0),
+                                child: Icon(Icons.percent, color: Colors.red,size: 13.0,),
+                              ),
+                              Text("Campus Alert", style: TextStyle(color: Colors.red, fontSize: 13, fontWeight: FontWeight.w600),),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 5.0),
+                          child: Text("Notifikasi ke-0", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold)),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10.0),
+                          child: Text("49 Days Ago", style: TextStyle(color: Colors.grey.shade400, fontSize: 12, fontWeight: FontWeight.bold)),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -166,17 +230,33 @@ class MyAppState extends State<MyApp> {
                       width: 1
                     )
                   ),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
-                        child: Text("Campus Alert", style: TextStyle(color: Colors.red, fontSize: 10, fontWeight: FontWeight.w600),),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10.0),
-                        child: Text("Notifikasi ke-4", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w400)),
-                      ),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(left:8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right:5.0),
+                                child: Icon(Icons.percent, color: Colors.red,size: 13.0,),
+                              ),
+                              Text("Campus Alert", style: TextStyle(color: Colors.red, fontSize: 13, fontWeight: FontWeight.w600),),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 5.0),
+                          child: Text("Notifikasi ke-0", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold)),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10.0),
+                          child: Text("49 Days Ago", style: TextStyle(color: Colors.grey.shade400, fontSize: 12, fontWeight: FontWeight.bold)),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -189,10 +269,10 @@ class MyAppState extends State<MyApp> {
           unselectedItemColor: Colors.black,
           onTap: onItemTap,
           items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.navigation), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Today'),
+            BottomNavigationBarItem(icon: Icon(Icons.navigation), label: "Discover"),
             BottomNavigationBarItem(icon: Icon(Icons.notification_add), label: 'Activity'),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Me"),
           ]),
       ),
     );
